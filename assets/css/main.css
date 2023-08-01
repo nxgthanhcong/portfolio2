@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: SFMono;
+    src: url('../fonts/SFMono-Regular.woff2');
+}
+
+@font-face {
+    font-family: Calibre;
+    font-weight: 400;
+    src: url('../fonts/Calibre-Regular.woff2');
+}
+
+@font-face {
+    font-family: Calibre;
+    font-weight: 500;
+    src: url('../fonts/Calibre-Medium.woff2');
+}
+
+@font-face {
+    font-family: Calibre;
+    font-weight: 600;
+    src: url('../fonts/Calibre-Semibold.woff2');
+}
+
+@layer base {
+    :root {
+        --color-navy: 10 25 47;
+        --color-white: #fff;
+        --color-lightest-slate: #ccd6f6;
+        --color-slate: #8892b0;
+        --color-dark-slate: #495670;
+        --color-green: #64ffda;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-height: 10rem;
+    --nav-item-color: rgb(204, 214, 246);
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+
+
+
+    --fz-sm: 1.4rem;
+    --fz-sx: 1.3rem;
+    --fz-md: 1.6rem;
+    --fz-lx: 2rem;
+    --fz-lxx: 2.2rem;
+    --fz-heading: 3.2rem;
+    --fz-lg: 1.8rem;
+    --font-sanz: 'Calibre';
+    --font-sanz-lv2: 'SFMono';
+    --mobile-navigation-zindex: 2;
+    --mobile-navigation-toggle-zindex: 3;
+    --tab-height: 4.2rem;
+}

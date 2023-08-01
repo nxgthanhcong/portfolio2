@@ -1,0 +1,13 @@
+.header--active {
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.18);
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.pc-navigation__item {
+    counter-increment: x 1;
+}
+
+.pc-navigation__link::before {
+    content: '0' counter(x) '. ';
+}
