@@ -33,6 +33,7 @@
         --color-slate: #8892b0;
         --color-dark-slate: #495670;
         --color-green: #64ffda;
+        --color-light-navy: #112240;
     }
 }
 
@@ -45,7 +46,6 @@
 :root {
     --nav-height: 10rem;
     --nav-item-color: rgb(204, 214, 246);
-    --light-navy: #112240;
     --lightest-navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
 

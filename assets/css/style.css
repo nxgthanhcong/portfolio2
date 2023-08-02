@@ -1,3 +1,17 @@
+body {
+    z-index: -1000;
+    position: relative;
+}
+
+#canvas {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: -100;
+}
+
 .header--active {
     box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.18);
     background-color: rgba(10, 25, 47, 0.85);
@@ -10,4 +24,55 @@
 
 .pc-navigation__link::before {
     content: '0' counter(x) '. ';
+}
+
+.btn--phen {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.btn--phen::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background-image: linear-gradient(#f00, #ccc);
+    left: 50%;
+    top: 50%;
+    animation: ifirotate 4s linear infinite;
+    z-index: -1;
+}
+
+@keyframes ifirotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.toggle-btn.active span:first-child {
+    transform: rotate(45deg);
+}
+
+.toggle-btn.active span:nth-child(2) {
+    display: none;
+}
+
+.toggle-btn.active span:last-child {
+    transform: rotate(-45deg);
+    transition-delay: .2s;
+}
+
+.mobile-navigation {
+    right: -100%;
+    transition: 0.3s;
+}
+
+.mobile-navigation.active {
+    right: 0;
 }
