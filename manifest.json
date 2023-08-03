@@ -1,0 +1,16 @@
+{
+    "name": "Ng Thanh Cong Portfolio",
+    "short_name": "NTC Portfolio",
+    "description": "A simple Progressive Web App example",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3498db",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
