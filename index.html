@@ -21,6 +21,7 @@
                 colors: {
                     primary: 'rgb(var(--color-navy) / 1)',
                     lightNavy: 'var(--color-light-navy)',
+                    lightestNavy: 'var(--color-lightest-navy)',
                     white: 'var(--color-white)',
                     lightestSlate: 'var(--color-lightest-slate)',
                     slate: 'var(--color-slate)',
@@ -38,7 +39,7 @@
     <canvas id="canvas"></canvas>
 
     <div>
-        <ul class="fixed left-16 bottom-0 flex flex-col items-center gap-y-6">
+        <ul class="lg:flex hidden fixed left-16 bottom-0 flex flex-col items-center gap-y-6">
             <li>
                 <a class="" href="">
                     <svg class="w-5 h-5 text-slate" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
@@ -108,7 +109,7 @@
             </li>
         </ul>
 
-        <ul class="fixed right-16 bottom-0 flex flex-col items-center gap-y-4">
+        <ul class="lg:flex hidden fixed right-16 bottom-0 flex flex-col items-center gap-y-4">
             <li>
                 <a class="text-slate tracking-[0.2rem]" href="mailto:nxgthanhcong@gmail.com"
                     style="writing-mode: vertical-rl;">nxgthanhcong@gmail.com</a>
@@ -161,13 +162,28 @@
                 <span class="toggle-btn__line duration-200 w-[18px] h-[2px] bg-slate"></span>
                 <span class="toggle-btn__line duration-200 w-[14px] h-[2px] bg-slate"></span>
             </div>
-            <div class="mobile-navigation fixed z-[9] w-[80vw] h-[100vh] top-0 bg-lightNavy">
-
+            <div
+                class="mobile-navigation fixed z-[9] w-[80vw] h-[100vh] top-0 bg-lightNavy flex items-center justify-center">
+                <ul class="mobile-navigation__list grid grid-cols-1 gap-y-12 my-auto">
+                    <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+                        <a href="">About</a>
+                    </li>
+                    <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+                        <a href="">Experience</a>
+                    </li>
+                    <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+                        <a href="">Work</a>
+                    </li>
+                    <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
 
     <main class="px-12 lg:px-36">
+        <!-- home section -->
         <div class="max-w-5xl mx-auto mt-[140px]">
             <h2 class="text-green " style="font-size: clamp(14px, 6vw, 16px);">Ưhat's up,</h2>
             <h1 class="text-lightestSlate font-bold" style="font-size: clamp(40px, 8vw, 80px);">Ng Thanh Cong</h1>
@@ -182,6 +198,56 @@
                     Check mess
                 </span>
             </button>
+        </div>
+        <!-- section about me -->
+        <div class="max-w-[900px] mx-auto mt-[160px]">
+
+            <!-- section title -->
+            <div class="flex items-center justify-start gap-x-8 mb-10">
+                <h2 class="section-title text-[20px] text-lightestSlate font-semibold">About me
+                </h2>
+                <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
+            </div>
+
+            <!-- section content -->
+            <div class="grid grid-cols-1 lg:grid-cols-[70%_1fr] gap-x-12 gap-y-12">
+                <div>
+                    <p class="text-slate text-[20px] leading-normal mb-2">
+                        Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in
+                        web development started back in 2012 when I decided to try editing custom Tumblr themes — turns
+                        out hacking together a custom reblog button taught me a lot about HTML & CSS!
+                    </p>
+                    <p class="text-slate text-[20px] leading-normal mb-2">
+                        Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a
+                        start-up, a huge corporation, and a student-led design studio. My main focus these days is
+                        building accessible, inclusive products and digital experiences at Upstatement for a variety of
+                        clients.
+                    </p>
+                    <p class="text-slate text-[20px] leading-normal mb-2">
+                        I also recently launched a course that covers everything you need to build a web app with the
+                        Spotify API using Node & React.
+                    </p>
+                    <p class="text-slate text-[20px] leading-normal mb-2">
+                        Here are a few technologies I’ve been working with recently:
+                    </p>
+                    <ul class="grid grid-cols-2 gap-y-1 mt-6 ml-4">
+                        <li class="language__item text-slate">JavaScript (ES6+)</li>
+                        <li class="language__item text-slate">React</li>
+                        <li class="language__item text-slate">Node.js</li>
+                        <li class="language__item text-slate">TypeScript</li>
+                        <li class="language__item text-slate">Eleventy</li>
+                        <li class="language__item text-slate">WordPress</li>
+                    </ul>
+
+                </div>
+                <div class="">
+                    <div class="about-picture mx-auto relative w-[240px]">
+                        <img class="about-picture__img max-w-[100%] rounded-[10px]" src="./assets/images/avt.jpg"
+                            alt="">
+                        <span class="about-picture__outline"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
