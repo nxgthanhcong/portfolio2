@@ -30,6 +30,7 @@
         --color-navy: 10 25 47;
         --color-white: #fff;
         --color-lightest-slate: #ccd6f6;
+        --color-light-slate: #a8b2d1;
         --color-slate: #8892b0;
         --color-dark-slate: #495670;
         --color-green: #64ffda;
@@ -44,7 +45,7 @@
     box-sizing: border-box;
 }
 
-:root {
+/* :root {
     --nav-height: 10rem;
     --nav-item-color: rgb(204, 214, 246);
     --lightest-navy: #233554;
@@ -64,4 +65,4 @@
     --mobile-navigation-zindex: 2;
     --mobile-navigation-toggle-zindex: 3;
     --tab-height: 4.2rem;
-}
+} */

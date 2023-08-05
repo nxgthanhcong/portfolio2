@@ -1,4 +1,5 @@
 const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
     ; (function () {
 
         // header shadow: header--active
@@ -16,5 +17,38 @@ const $ = document.querySelector.bind(document)
             toggleBtn.classList.toggle('active')
             mobileNavigation.classList.toggle('active')
         })
+
+        // tabs
+        // active tab link
+        const tabs = $$('.tab__item')
+        const tabContents = $$('.tab-content__item')
+        const tabLine = $('.tab__line')
+        const activeTabClassname = 'tab__item--active'
+
+        const removeStateActiveTab = () => {
+            tabs.forEach(tab => {
+                tab.classList.remove(activeTabClassname)
+            })
+        }
+
+        const hiddenAllTabContent = () => {
+            tabContents.forEach(tabContent => {
+                tabContent.classList.add('hidden')
+            })
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                removeStateActiveTab()
+                tab.classList.add(activeTabClassname)
+
+                const tabIndex = +tab.getAttribute('data-index')
+                tabLine.style.top = tabLine.offsetHeight * tabIndex + 'px'
+
+                hiddenAllTabContent()
+                const activeTabcontent = $(`.tab-content__item[data-index="${tabIndex}"]`)
+                activeTabcontent.classList.remove('hidden')
+            })
+        });
 
     })()

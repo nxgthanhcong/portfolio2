@@ -24,10 +24,13 @@
                     lightNavy: 'var(--color-light-navy)',
                     lightestNavy: 'var(--color-lightest-navy)',
                     white: 'var(--color-white)',
+                    lightSlate: 'var(--color-light-slate)',
                     lightestSlate: 'var(--color-lightest-slate)',
                     slate: 'var(--color-slate)',
                     darkSlate: 'var(--color-dark-slate)',
                     green: 'var(--color-green)',
+
+
                 }
             }
         }
@@ -196,7 +199,7 @@
 
     <main class="px-12 lg:px-36">
         <!-- home section -->
-        <div class="max-w-5xl mx-auto mt-[140px]">
+        <div class="max-w-5xl mx-auto mt-[140px] pb-[250px]">
             <h2 class="text-green " style="font-size: clamp(14px, 6vw, 16px);">Ưhat's up,</h2>
             <h1 class="text-lightestSlate font-bold" style="font-size: clamp(40px, 8vw, 80px);">Ng Thanh Cong</h1>
             <h3 class="text-slate font-bold" style="font-size: clamp(30px, 6vw, 60px);">Build some shits for the web
@@ -212,7 +215,7 @@
             </button>
         </div>
         <!-- section about me -->
-        <div class="max-w-[900px] mx-auto mt-[160px]">
+        <div class="max-w-[900px] mx-auto pb-[250px]">
 
             <!-- section title -->
             <div class="flex items-center justify-start gap-x-8 mb-10">
@@ -261,10 +264,414 @@
                 </div>
             </div>
         </div>
+        <!-- section worked -->
+        <div class="max-w-[700px] mx-auto pb-[250px]">
+            <!-- section title -->
+            <div class="flex items-center justify-start gap-x-8 mb-10">
+                <h2 class="section-title text-[20px] text-lightestSlate font-semibold">What I've worked
+                </h2>
+                <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
+            </div>
+            <div class="grid grid-cols-[max-content_auto] gap-x-3">
+                <div>
+                    <ul class="tab__list relative grid">
+                        <li data-index="0"
+                            class="tab__item tab__item--active h-[42px] flex items-center px-6 font-['SFMono'] text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid ">
+                            Upstatement
+                        </li>
+                        <li data-index="1"
+                            class="tab__item  h-[42px] flex items-center px-6 font-['SFMono'] text-[13px] cursor-pointer  border-l-2 border-lightestNavy border-solid">
+                            Scout
+                        </li>
+                        <li data-index="2"
+                            class="tab__item h-[42px] flex items-center px-6 font-['SFMono'] text-[13px] cursor-pointer  border-l-2 border-lightestNavy border-solid">
+                            Apple
+                        </li>
+                        <li data-index="3"
+                            class="tab__item h-[42px] flex items-center px-6 font-['SFMono'] text-[13px] cursor-pointer  border-l-2 border-lightestNavy border-solid">
+                            Scout
+                        </li>
+                        <li data-index="4"
+                            class="tab__item h-[42px] flex items-center px-6 font-['SFMono'] text-[13px] cursor-pointer  border-l-2 border-lightestNavy border-solid">
+                            Starry
+                        </li>
+                        <li data-index="5"
+                            class="tab__item h-[42px] flex items-center px-6 font-['SFMono'] text-[13px] cursor-pointer  border-l-2 border-lightestNavy border-solid">
+                            MullenLowe
+                        </li>
+                        <li class="tab__line absolute content-[''] w-[1px] h-[42px] bg-white"></li>
+                    </ul>
+                </div>
+                <div class="py-[10px]">
+                    <ul class="tab-content__list">
+                        <li data-index="0" class="tab-content__item">
+                            <h3 class="font-medium text-[20px]">
+                                <span class="text-lightestSlate">Coder</span>
+                                <span class="text-green">@TopOnTech</span>
+                            </h3>
+                            <p class="text-lightestSlate text-[12px] font-['SFMono']">May 2018 - Present</p>
+                            <ul class="grid gap-y-3 mt-6 ml-4">
+                                <li class="language__item text-slate text-[18px]">Write modern, performant, maintainable
+                                    code
+                                    for a diverse
+                                    array of client and internal projects</li>
+                                <li class="language__item text-slate text-[18px]">Work with a variety of different
+                                    languages,
+                                    platforms,
+                                    frameworks, and content management systems such as JavaScript, TypeScript, Gatsby,
+                                    React,
+                                    Craft, WordPress, Prismic, and Netlify</li>
+                                <li class="language__item text-slate text-[18px]">Communicate with multi-disciplinary
+                                    teams of
+                                    engineers,
+                                    designers, producers, and clients on a daily basis</li>
+                            </ul>
+                        </li>
+                        <li data-index="1" class="tab-content__item hidden">
+                            <h3 class="font-medium text-[20px]">
+                                <span class="text-lightestSlate">Coder</span>
+                                <span class="text-green">@Abc</span>
+                            </h3>
+                            <p class="text-lightestSlate text-[12px] font-['SFMono']">May 2018 - Present</p>
+                            <ul class="grid gap-y-3 mt-6 ml-4">
+                                <li class="language__item text-slate text-[18px]">Write modern, performant, maintainable
+                                    code
+                                    for a diverse
+                                    array of client and internal projects</li>
+                                <li class="language__item text-slate text-[18px]">Work with a variety of different
+                                    languages,
+                                    platforms,
+                                    frameworks, and content management systems such as JavaScript, TypeScript, Gatsby,
+                                    React,
+                                    Craft, WordPress, Prismic, and Netlify</li>
+                                <li class="language__item text-slate text-[18px]">Communicate with multi-disciplinary
+                                    teams of
+                                    engineers,
+                                    designers, producers, and clients on a daily basis</li>
+                            </ul>
+                        </li>
+                        <li data-index="2" class="tab-content__item hidden">
+                            <h3 class="font-medium text-[20px]">
+                                <span class="text-lightestSlate">Coder</span>
+                                <span class="text-green">@Xyz</span>
+                            </h3>
+                            <p class="text-lightestSlate text-[12px] font-['SFMono']">May 2018 - Present</p>
+                            <ul class="grid gap-y-3 mt-6 ml-4">
+                                <li class="language__item text-slate text-[18px]">Write modern, performant, maintainable
+                                    code
+                                    for a diverse
+                                    array of client and internal projects</li>
+                                <li class="language__item text-slate text-[18px]">Work with a variety of different
+                                    languages,
+                                    platforms,
+                                    frameworks, and content management systems such as JavaScript, TypeScript, Gatsby,
+                                    React,
+                                    Craft, WordPress, Prismic, and Netlify</li>
+                                <li class="language__item text-slate text-[18px]">Communicate with multi-disciplinary
+                                    teams of
+                                    engineers,
+                                    designers, producers, and clients on a daily basis</li>
+                            </ul>
+                        </li>
+                        <li data-index="3" class="tab-content__item hidden">
+                            <h3 class="font-medium text-[20px]">
+                                <span class="text-lightestSlate">Coder</span>
+                                <span class="text-green">@TopOnTech</span>
+                            </h3>
+                            <p class="text-lightestSlate text-[12px] font-['SFMono']">May 2018 - Present</p>
+                            <ul class="grid gap-y-3 mt-6 ml-4">
+                                <li class="language__item text-slate text-[18px]">Write modern, performant, maintainable
+                                    code
+                                    for a diverse
+                                    array of client and internal projects</li>
+                                <li class="language__item text-slate text-[18px]">Work with a variety of different
+                                    languages,
+                                    platforms,
+                                    frameworks, and content management systems such as JavaScript, TypeScript, Gatsby,
+                                    React,
+                                    Craft, WordPress, Prismic, and Netlify</li>
+                                <li class="language__item text-slate text-[18px]">Communicate with multi-disciplinary
+                                    teams of
+                                    engineers,
+                                    designers, producers, and clients on a daily basis</li>
+                            </ul>
+                        </li>
+                        <li data-index="4" class="tab-content__item hidden">
+                            <h3 class="font-medium text-[20px]">
+                                <span class="text-lightestSlate">Coder</span>
+                                <span class="text-green">@TopOnTech</span>
+                            </h3>
+                            <p class="text-lightestSlate text-[12px] font-['SFMono']">May 2018 - Present</p>
+                            <ul class="grid gap-y-3 mt-6 ml-4">
+                                <li class="language__item text-slate text-[18px]">Write modern, performant, maintainable
+                                    code
+                                    for a diverse
+                                    array of client and internal projects</li>
+                                <li class="language__item text-slate text-[18px]">Work with a variety of different
+                                    languages,
+                                    platforms,
+                                    frameworks, and content management systems such as JavaScript, TypeScript, Gatsby,
+                                    React,
+                                    Craft, WordPress, Prismic, and Netlify</li>
+                                <li class="language__item text-slate text-[18px]">Communicate with multi-disciplinary
+                                    teams of
+                                    engineers,
+                                    designers, producers, and clients on a daily basis</li>
+                            </ul>
+                        </li>
+                        <li data-index="5" class="tab-content__item hidden">
+                            <h3 class="font-medium text-[20px]">
+                                <span class="text-lightestSlate">Coder</span>
+                                <span class="text-green">@TopOnTech</span>
+                            </h3>
+                            <p class="text-lightestSlate text-[12px] font-['SFMono']">May 2018 - Present</p>
+                            <ul class="grid gap-y-3 mt-6 ml-4">
+                                <li class="language__item text-slate text-[18px]">Write modern, performant, maintainable
+                                    code
+                                    for a diverse
+                                    array of client and internal projects</li>
+                                <li class="language__item text-slate text-[18px]">Work with a variety of different
+                                    languages,
+                                    platforms,
+                                    frameworks, and content management systems such as JavaScript, TypeScript, Gatsby,
+                                    React,
+                                    Craft, WordPress, Prismic, and Netlify</li>
+                                <li class="language__item text-slate text-[18px]">Communicate with multi-disciplinary
+                                    teams of
+                                    engineers,
+                                    designers, producers, and clients on a daily basis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto pb-[250px]">
+            <!-- section title -->
+            <div class="flex items-center justify-start gap-x-8 mb-10">
+                <h2 class="section-title text-[20px] text-lightestSlate font-semibold">Some Things I’ve Built
+                </h2>
+                <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
+            </div>
+            <div>
+                <ul class="grid gap-y-24">
+                    <li class="grid grid-cols-12">
+                        <div
+                            class="builted-image rounded overflow-hidden col-start-1 col-end-12 lg:col-start-1 lg:col-end-8 row-start-1 row-end-13">
+                            <img class="w-full h-full object-cover builted-image__img"
+                                src="./assets/images/halcyon.avif" alt="">
+                            <div class="builted-image__overlay"></div>
+                        </div>
+                        <div class="relative col-start-7 col-end-13 row-start-1 row-end-13 text-right pt-12">
+                            <span class="font-['SFMono'] text-[13px] text-green">Featured Project</span>
+                            <h3 class="text-lightestSlate font-bold text-[30px] mb-6">Halcyon Theme</h3>
+                            <p
+                                class="z-[1] text-lightestSlate rounded shadow-md text-[18px] py-6 pl-10 pr-4 bg-lightNavy">
+                                A
+                                minimal,
+                                dark blue
+                                theme
+                                for
+                                VS Code,
+                                Sublime
+                                Text, Atom, iTerm, and more. Available on
+                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                            </p>
+                            <ul class="flex gap-x-4 justify-end my-5">
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">VS Code</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Sublime</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Text</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Atom</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">iTerm2</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Hyper</li>
+                            </ul>
+                            <ul class="flex gap-x-4 justify-end my-5">
+                                <li class="">
+                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-github">
+                                            <title>GitHub</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-external-link">
+                                            <title>External Link</title>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="grid grid-cols-12">
+                        <div
+                            class="builted-image rounded overflow-hidden col-start-6 col-end-13 row-start-1 row-end-13">
+                            <img class="w-full h-full object-cover builted-image__img"
+                                src="./assets/images/halcyon.avif" alt="">
+                            <div class="builted-image__overlay"></div>
+                        </div>
+                        <div class="relative col-start-1 col-end-7 row-start-1 row-end-13 text-left pt-12">
+                            <span class="font-['SFMono'] text-[13px] text-green">Featured Project</span>
+                            <h3 class="text-lightestSlate font-bold text-[30px] mb-6">Halcyon Theme</h3>
+                            <p
+                                class="z-[1] text-lightestSlate rounded shadow-md text-[18px] py-6 pl-10 pr-4 bg-lightNavy">
+                                A
+                                minimal,
+                                dark blue
+                                theme
+                                for
+                                VS Code,
+                                Sublime
+                                Text, Atom, iTerm, and more. Available on
+                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                            </p>
+                            <ul class="flex gap-x-4 justify-start my-5">
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">VS Code</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Sublime</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Text</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Atom</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">iTerm2</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Hyper</li>
+                            </ul>
+                            <ul class="flex gap-x-4 justify-start my-5">
+                                <li class="">
+                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-github">
+                                            <title>GitHub</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-external-link">
+                                            <title>External Link</title>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="grid grid-cols-12">
+                        <div class="builted-image rounded overflow-hidden col-start-1 col-end-8 row-start-1 row-end-13">
+                            <img class="w-full h-full object-cover builted-image__img"
+                                src="./assets/images/halcyon.avif" alt="">
+                            <div class="builted-image__overlay"></div>
+                        </div>
+                        <div class="relative col-start-7 col-end-13 row-start-1 row-end-13 text-right pt-12">
+                            <span class="font-['SFMono'] text-[13px] text-green">Featured Project</span>
+                            <h3 class="text-lightestSlate font-bold text-[30px] mb-6">Halcyon Theme</h3>
+                            <p
+                                class="z-[1] text-lightestSlate rounded shadow-md text-[18px] py-6 pl-10 pr-4 bg-lightNavy">
+                                A
+                                minimal,
+                                dark blue
+                                theme
+                                for
+                                VS Code,
+                                Sublime
+                                Text, Atom, iTerm, and more. Available on
+                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                            </p>
+                            <ul class="flex gap-x-4 justify-end my-5">
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">VS Code</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Sublime</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Text</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Atom</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">iTerm2</li>
+                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Hyper</li>
+                            </ul>
+                            <ul class="flex gap-x-4 justify-end my-5">
+                                <li class="">
+                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-github">
+                                            <title>GitHub</title>
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-external-link">
+                                            <title>External Link</title>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
+    <footer class="py-10">
+        <p class="text-center text-darkSlate font-['SFMono'] text-[12px]">Designed by Brittany Chiang. Built by
+            Ng Thanh Cong</p>
+        <ul class="flex gap-x-4 items-center justify-center  text-[12px] font-['SFMono'] text-darkSlate">
+            <li>
+                <svg class="w-[14px] h-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                    <title>Star</title>
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                </svg>
+            </li>
+            <li>
+                0,000
+            </li>
+            <li>
+                <svg class="w-[14px] h-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch">
+                    <title>Git Fork</title>
+                    <line x1="6" y1="3" x2="6" y2="15"></line>
+                    <circle cx="18" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M18 9a9 9 0 0 1-9 9"></path>
+                </svg>
+            </li>
+            <li>
+                0,000
+            </li>
+        </ul>
+    </footer>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/cursor1.js"></script>
 </body>
 
 <!-- </html>after:absolute after:content-[''] after:inset-1 after:bg-primary -->
