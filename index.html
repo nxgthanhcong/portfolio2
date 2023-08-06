@@ -199,7 +199,7 @@
 
     <main class="px-12 lg:px-36">
         <!-- home section -->
-        <div class="max-w-5xl mx-auto mt-[140px] pb-[250px]">
+        <div class="h-[100vh] flex flex-col justify-center max-w-5xl mx-auto mt-[140px] pb-[250px]">
             <h2 class="text-green " style="font-size: clamp(14px, 6vw, 16px);">Ưhat's up,</h2>
             <h1 class="text-lightestSlate font-bold" style="font-size: clamp(40px, 8vw, 80px);">Ng Thanh Cong</h1>
             <h3 class="text-slate font-bold" style="font-size: clamp(30px, 6vw, 60px);">Build some shits for the web
@@ -219,7 +219,7 @@
 
             <!-- section title -->
             <div class="flex items-center justify-start gap-x-8 mb-10">
-                <h2 class="section-title text-[20px] text-lightestSlate font-semibold">About me
+                <h2 class="section-title text-lightestSlate font-semibold">About me
                 </h2>
                 <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
             </div>
@@ -268,7 +268,7 @@
         <div class="max-w-[700px] mx-auto pb-[250px]">
             <!-- section title -->
             <div class="flex items-center justify-start gap-x-8 mb-10">
-                <h2 class="section-title text-[20px] text-lightestSlate font-semibold">What I've worked
+                <h2 class="section-title text-lightestSlate font-semibold">What I've worked
                 </h2>
                 <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
             </div>
@@ -447,36 +447,60 @@
             </div>
         </div>
 
+        <!-- section What I've worked -->
         <div class="max-w-5xl mx-auto pb-[250px]">
             <!-- section title -->
             <div class="flex items-center justify-start gap-x-8 mb-10">
-                <h2 class="section-title text-[20px] text-lightestSlate font-semibold">Some Things I’ve Built
+                <h2 class="section-title text-lightestSlate font-semibold">Some Things I’ve Built
                 </h2>
                 <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
             </div>
             <div>
-                <ul class="grid gap-y-24">
-                    <li class="grid grid-cols-12">
-                        <div
-                            class="builted-image rounded overflow-hidden col-start-1 col-end-12 lg:col-start-1 lg:col-end-8 row-start-1 row-end-13">
+                <ul class="grid gap-y-40 mt-20">
+                    <li class="grid grid-cols-12 shadow-xl lg:shadow-none">
+                        <div class="
+                            builted-image 
+                            rounded 
+                            overflow-hidden 
+                            col-start-1 
+                            col-end-13 
+                            lg:col-start-1 
+                            lg:col-end-8 
+                            row-start-1 
+                            row-end-13
+                            opacity-10
+                            lg:opacity-100
+                            ">
                             <img class="w-full h-full object-cover builted-image__img"
                                 src="./assets/images/halcyon.avif" alt="">
                             <div class="builted-image__overlay"></div>
                         </div>
-                        <div class="relative col-start-7 col-end-13 row-start-1 row-end-13 text-right pt-12">
+                        <div class="
+                            relative 
+                            col-start-1 
+                            col-end-13 
+                            lg:col-start-7 
+                            lg:col-end-13 
+                            row-start-1 
+                            row-end-13 
+                            text-right
+                            lg:text-right
+                            bg-[rgba(255,255,255,0.01)]
+                            lg:bg-[rgba(255,255,255,0)]
+                            ">
                             <span class="font-['SFMono'] text-[13px] text-green">Featured Project</span>
                             <h3 class="text-lightestSlate font-bold text-[30px] mb-6">Halcyon Theme</h3>
-                            <p
-                                class="z-[1] text-lightestSlate rounded shadow-md text-[18px] py-6 pl-10 pr-4 bg-lightNavy">
-                                A
-                                minimal,
-                                dark blue
-                                theme
-                                for
-                                VS Code,
-                                Sublime
-                                Text, Atom, iTerm, and more. Available on
-                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                            <p class="
+                                z-[1] 
+                                text-lightestSlate 
+                                rounded 
+                                shadow-md 
+                                text-[18px] 
+                                p-6
+                                pl-10
+                                lg:bg-lightNavy">
+                                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available
+                                on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
                             </p>
                             <ul class="flex gap-x-4 justify-end my-5">
                                 <li class="font-['SFMono'] text-[13px] text-lightSlate">VS Code</li>
@@ -516,27 +540,50 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="grid grid-cols-12">
-                        <div
-                            class="builted-image rounded overflow-hidden col-start-6 col-end-13 row-start-1 row-end-13">
+                    <li class="grid grid-cols-12 shadow-xl lg:shadow-none">
+                        <div class="
+                            builted-image 
+                            rounded 
+                            overflow-hidden 
+                            col-start-1 
+                            col-end-13 
+                            lg:col-start-6 
+                            lg:col-end-13 
+                            row-start-1 
+                            row-end-13
+                            opacity-10
+                            lg:opacity-100
+                            ">
                             <img class="w-full h-full object-cover builted-image__img"
                                 src="./assets/images/halcyon.avif" alt="">
                             <div class="builted-image__overlay"></div>
                         </div>
-                        <div class="relative col-start-1 col-end-7 row-start-1 row-end-13 text-left pt-12">
+                        <div class="
+                            relative 
+                            col-start-1 
+                            col-end-13 
+                            lg:col-start-1 
+                            lg:col-end-7 
+                            row-start-1 
+                            row-end-13 
+                            text-right
+                            lg:text-left
+                            bg-[rgba(255,255,255,0.01)]
+                            lg:bg-[rgba(255,255,255,0)]
+                            ">
                             <span class="font-['SFMono'] text-[13px] text-green">Featured Project</span>
                             <h3 class="text-lightestSlate font-bold text-[30px] mb-6">Halcyon Theme</h3>
-                            <p
-                                class="z-[1] text-lightestSlate rounded shadow-md text-[18px] py-6 pl-10 pr-4 bg-lightNavy">
-                                A
-                                minimal,
-                                dark blue
-                                theme
-                                for
-                                VS Code,
-                                Sublime
-                                Text, Atom, iTerm, and more. Available on
-                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                            <p class="
+                                z-[1] 
+                                text-lightestSlate 
+                                rounded 
+                                shadow-md 
+                                text-[18px] 
+                                p-6
+                                pl-10
+                                lg:bg-lightNavy">
+                                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available
+                                on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
                             </p>
                             <ul class="flex gap-x-4 justify-start my-5">
                                 <li class="font-['SFMono'] text-[13px] text-lightSlate">VS Code</li>
@@ -547,65 +594,6 @@
                                 <li class="font-['SFMono'] text-[13px] text-lightSlate">Hyper</li>
                             </ul>
                             <ul class="flex gap-x-4 justify-start my-5">
-                                <li class="">
-                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
-                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-github">
-                                            <title>GitHub</title>
-                                            <path
-                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
-                                        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-external-link">
-                                            <title>External Link</title>
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                            <polyline points="15 3 21 3 21 9"></polyline>
-                                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="grid grid-cols-12">
-                        <div class="builted-image rounded overflow-hidden col-start-1 col-end-8 row-start-1 row-end-13">
-                            <img class="w-full h-full object-cover builted-image__img"
-                                src="./assets/images/halcyon.avif" alt="">
-                            <div class="builted-image__overlay"></div>
-                        </div>
-                        <div class="relative col-start-7 col-end-13 row-start-1 row-end-13 text-right pt-12">
-                            <span class="font-['SFMono'] text-[13px] text-green">Featured Project</span>
-                            <h3 class="text-lightestSlate font-bold text-[30px] mb-6">Halcyon Theme</h3>
-                            <p
-                                class="z-[1] text-lightestSlate rounded shadow-md text-[18px] py-6 pl-10 pr-4 bg-lightNavy">
-                                A
-                                minimal,
-                                dark blue
-                                theme
-                                for
-                                VS Code,
-                                Sublime
-                                Text, Atom, iTerm, and more. Available on
-                                Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
-                            </p>
-                            <ul class="flex gap-x-4 justify-end my-5">
-                                <li class="font-['SFMono'] text-[13px] text-lightSlate">VS Code</li>
-                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Sublime</li>
-                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Text</li>
-                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Atom</li>
-                                <li class="font-['SFMono'] text-[13px] text-lightSlate">iTerm2</li>
-                                <li class="font-['SFMono'] text-[13px] text-lightSlate">Hyper</li>
-                            </ul>
-                            <ul class="flex gap-x-4 justify-end my-5">
                                 <li class="">
                                     <a class="w-[20px] h-[20px] block text-lightSlate" href="">
                                         <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img"
