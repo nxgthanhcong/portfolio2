@@ -1,0 +1,63 @@
+.hand-loading {
+    transition: .3s;
+    animation: loading-fade;
+    animation-fill-mode: forwards;
+    /* animation-delay: 3.25s; */
+}
+
+@keyframes loading-fade {
+    100% {
+        z-index: -10;
+        opacity: 0;
+    }
+}
+
+.hand-loading__img {
+    animation: cook 0.25s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    width: 400px;
+}
+
+@keyframes cook {
+    from{
+
+    }
+    to {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+.fadedown-enter {
+    opacity: 0.005;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .fadedown-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .fadeup-enter {
+    opacity: 0.005;
+    transform: translateY(20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .fadeup-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }

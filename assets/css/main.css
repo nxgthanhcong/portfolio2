@@ -28,14 +28,15 @@
 @layer base {
     :root {
         --color-navy: 10 25 47;
+        --color-light-navy: #112240;
+        --color-lightest-navy: #233554;
+        --color-dark-navy: #020c1b;
         --color-white: #fff;
         --color-lightest-slate: #ccd6f6;
         --color-light-slate: #a8b2d1;
         --color-slate: #8892b0;
         --color-dark-slate: #495670;
         --color-green: #64ffda;
-        --color-light-navy: #112240;
-        --color-lightest-navy: #233554;
     }
 }
 

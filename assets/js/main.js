@@ -1,6 +1,95 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
+
+const helper = {
+  delay: (msSecond) =>
+    new Promise((resolve) => {
+      setTimeout(resolve, msSecond);
+    }),
+};
+
 (function () {
+  document.addEventListener("DOMContentLoaded", async () => {
+    const fadeTypes = ["fadedown-enter", "fadeup-enter", "fade-enter"];
+    const findType = (elClasses) => {
+      let rs = "";
+      elClasses.forEach((d) => {
+        if (fadeTypes.includes(d)) {
+          rs = d;
+        }
+      });
+      return rs;
+    };
+
+    const animateElement = async (selector, delay, transitionDelay = 0) => {
+      debugger;
+
+      const elements = $$(selector);
+      elements.forEach((el, index) => {
+        const fadeType = findType(el.classList);
+        const orginClass = el.getAttribute("class");
+
+        el.setAttribute(
+          "class",
+          orginClass.replace(fadeType, fadeType + "-active")
+        );
+        transitionDelay > 0 &&
+          (el.style.transitionDelay = index * transitionDelay + "ms");
+      });
+      await helper.delay(delay);
+    };
+
+    const arrFunctions = [
+      {
+        name: "hand-loading",
+        function: async () => {
+          $(".hand-loading").style.animationDelay = `${3250}ms`;
+          await helper.delay(3250);
+        },
+      },
+      {
+        name: "logo-fade",
+        function: async () => {
+          await animateElement(".logo.fadedown-enter", 300);
+        },
+      },
+      {
+        name: "menu-item-fade",
+        function: async () => {
+          await animateElement(".pc-navigation__item.fadedown-enter", 600, 100);
+        },
+      },
+      {
+        name: "home-section-fade",
+        function: async () => {
+          await animateElement(".home-section .fadeup-enter", 700, 100);
+        },
+      },
+      {
+        name: "information-vertical-fade",
+        function: async () => {
+          await animateElement(
+            ".home-section .fade-enter, .information-vertical.fade-enter",
+            300
+          );
+        },
+      },
+    ];
+
+    const isSmallScreen = window.innerWidth < 1024;
+    const animationsToRun = isSmallScreen
+      ? arrFunctions.filter((fn) => fn.name !== "menu-item-fade")
+      : arrFunctions;
+
+    for (
+      let index = 0, length = animationsToRun.length;
+      index < length;
+      index++
+    ) {
+      await arrFunctions[index].function();
+    }
+  });
+
   //pwa
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
