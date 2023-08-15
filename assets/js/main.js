@@ -22,8 +22,6 @@ const helper = {
     };
 
     const animateElement = async (selector, delay, transitionDelay = 0) => {
-      debugger;
-
       const elements = $$(selector);
       elements.forEach((el, index) => {
         const fadeType = findType(el.classList);
@@ -40,13 +38,13 @@ const helper = {
     };
 
     const arrFunctions = [
-      {
-        name: "hand-loading",
-        function: async () => {
-          $(".hand-loading").style.animationDelay = `${3250}ms`;
-          await helper.delay(3250);
-        },
-      },
+      // {
+      //   name: "hand-loading",
+      //   function: async () => {
+      //     $(".hand-loading").style.animationDelay = `${3250}ms`;
+      //     await helper.delay(3250);
+      //   },
+      // },
       {
         name: "logo-fade",
         function: async () => {
@@ -154,5 +152,20 @@ const helper = {
       );
       activeTabcontent.classList.remove("hidden");
     });
+  });
+
+  // CURSOR
+  document.addEventListener("mousemove", (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    const cursor = $(".cursor-overlay");
+    cursor.style.backgroundImage = ` 
+    radial-gradient(
+      600px at ${x}px ${y}px,
+      rgba(29, 78, 216, 0.15),
+      transparent 80%
+    )
+    `;
   });
 })();
