@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 12px;
 }
 
@@ -10,7 +10,7 @@
 
 ::-webkit-scrollbar-track {
   background: var(--color-navy);
-}
+} */
 
 body {
   counter-increment: s 0;

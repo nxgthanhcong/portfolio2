@@ -1,60 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ng Thanh Cong portfolio</title>
+    <link rel="icon" href="./icon.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="./assets/css/animated.css" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              calibre: ["Calibre", "sans-serif"],
-              sfMono: ["SFMono", "sans-serif"],
-            },
-          },
-          colors: {
-            primary: "rgb(var(--color-navy) / 1)",
-            lightNavy: "var(--color-light-navy)",
-            lightestNavy: "var(--color-lightest-navy)",
-            darkNavy: "var(--color-dark-navy)",
-            white: "var(--color-white)",
-            lightSlate: "var(--color-light-slate)",
-            lightestSlate: "var(--color-lightest-slate)",
-            slate: "var(--color-slate)",
-            darkSlate: "var(--color-dark-slate)",
-            green: "var(--color-green)",
-          },
-        },
-      };
-    </script>
   </head>
 
   <body class="font-calibre bg-primary">
     <header
       id="header"
-      class="fixed z-[100] top-0 left-0 w-full h-[100px] flex justify-between items-center px-12 lg:px-16 duration-100 delay-100"
+      class="fixed left-0 top-0 z-[100] flex h-[100px] w-full items-center justify-between px-12 delay-100 duration-100 lg:px-16"
     >
       <div>
         <h2
-          class="logo fadedown-enter text-[25px] font-semibold text-white flex"
+          class="logo fadedown-enter flex text-[25px] font-semibold text-white"
         >
-          <span class="tracking-[0.4rem] bg-darkSlate">dead</span>
+          <span class="bg-darkSlate tracking-[0.4rem]">dead</span>
           <span class="">C</span>
         </h2>
       </div>
       <ul
-        class="hidden lg:flex md:gap-x-8 lg:gap-x-12 text-white items-center font-sfMono"
+        class="font-sfMono hidden items-center text-white md:gap-x-8 lg:flex lg:gap-x-12"
       >
         <li class="pc-navigation__item fadedown-enter group cursor-pointer">
           <a
-            class="pc-navigation__link text-[13px] text-lightestSlate group-hover:text-green"
+            class="pc-navigation__link text-lightestSlate group-hover:text-green text-[13px]"
             href=""
           >
             About
@@ -62,7 +39,7 @@
         </li>
         <li class="pc-navigation__item fadedown-enter group cursor-pointer">
           <a
-            class="pc-navigation__link text-[13px] text-lightestSlate group-hover:text-green"
+            class="pc-navigation__link text-lightestSlate group-hover:text-green text-[13px]"
             href=""
           >
             Experience
@@ -70,7 +47,7 @@
         </li>
         <li class="pc-navigation__item fadedown-enter group cursor-pointer">
           <a
-            class="pc-navigation__link text-[13px] text-lightestSlate group-hover:text-green"
+            class="pc-navigation__link text-lightestSlate group-hover:text-green text-[13px]"
             href=""
           >
             Work
@@ -78,7 +55,7 @@
         </li>
         <li class="pc-navigation__item fadedown-enter group cursor-pointer">
           <a
-            class="pc-navigation__link text-[13px] text-lightestSlate group-hover:text-green"
+            class="pc-navigation__link text-lightestSlate group-hover:text-green text-[13px]"
             href=""
           >
             Contact
@@ -99,29 +76,29 @@
       <div class="lg:hidden">
         <div class="toggle-btn fixed z-[10] flex flex-col gap-y-[4px]">
           <span
-            class="toggle-btn__line duration-200 w-[22px] h-[2px] bg-slate"
+            class="toggle-btn__line bg-slate h-[2px] w-[22px] duration-200"
           ></span>
           <span
-            class="toggle-btn__line duration-200 w-[18px] h-[2px] bg-slate"
+            class="toggle-btn__line bg-slate h-[2px] w-[18px] duration-200"
           ></span>
           <span
-            class="toggle-btn__line duration-200 w-[14px] h-[2px] bg-slate"
+            class="toggle-btn__line bg-slate h-[2px] w-[14px] duration-200"
           ></span>
         </div>
         <div
-          class="mobile-navigation fixed z-[9] w-[80vw] h-[100vh] top-0 bg-lightNavy flex items-center justify-center"
+          class="mobile-navigation bg-lightNavy fixed top-0 z-[9] flex h-[100vh] w-[80vw] items-center justify-center"
         >
-          <ul class="mobile-navigation__list grid grid-cols-1 gap-y-12 my-auto">
-            <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+          <ul class="mobile-navigation__list my-auto grid grid-cols-1 gap-y-12">
+            <li class="mobile-navigation__item text-lightestSlate text-[20px]">
               <a href="">About</a>
             </li>
-            <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+            <li class="mobile-navigation__item text-lightestSlate text-[20px]">
               <a href="">Experience</a>
             </li>
-            <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+            <li class="mobile-navigation__item text-lightestSlate text-[20px]">
               <a href="">Work</a>
             </li>
-            <li class="mobile-navigation__item text-[20px] text-lightestSlate">
+            <li class="mobile-navigation__item text-lightestSlate text-[20px]">
               <a href="">Contact</a>
             </li>
           </ul>
@@ -132,7 +109,7 @@
     <main class="px-12 lg:px-36">
       <!-- home section -->
       <div
-        class="home-section h-[100vh] flex flex-col justify-center max-w-5xl mx-auto mt-[140px] pb-[250px]"
+        class="home-section mx-auto mt-[250px] flex min-h-[100vh] max-w-5xl flex-col justify-center pb-[250px]"
       >
         <h2
           class="fadeup-enter text-green"
@@ -153,57 +130,59 @@
           Build some shits for the web
         </h3>
         <p
-          class="fadeup-enter text-[20px] mt-5 text-slate max-w-[540px] leading-8"
+          class="fadeup-enter text-slate mt-5 max-w-[540px] text-[20px] leading-8"
         >
           I’m a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I’m focused on
           building accessible, human-centered products at Upstatement.
         </p>
-        <button
-          class="fade-enter btn--phen inline-block w-[120px] h-[45px] bg-[rgba(0,0,0,0.5)] mt-12"
+        <object
+          aria-label="SVGator astronaut animation"
+          width="100%"
+          height="100%"
+          class="bR_fx"
+          type="image/svg+xml"
+          data="//cdn.svgator.com/assets/main-page/fold1/astronaut-hero.svg"
         >
-          <span
-            class="absolute inset-[2px] bg-primary flex items-center justify-center text-lightestSlate text-[16px]"
-          >
-            Check mess
-          </span>
-        </button>
+          <img alt="SVGator astronaut animation" />
+        </object>
       </div>
+
       <!-- section about me -->
-      <div class="max-w-[900px] mx-auto pb-[250px]">
+      <div class="mx-auto max-w-[900px] pb-[250px]">
         <!-- section title -->
-        <div class="flex items-center justify-start gap-x-8 mb-10">
+        <div class="mb-10 flex items-center justify-start gap-x-8">
           <h2 class="section-title text-lightestSlate font-semibold">
             About me
           </h2>
-          <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
+          <span class="bg-lightestNavy block h-[1px] w-[40%]"></span>
         </div>
 
         <!-- section content -->
-        <div class="grid grid-cols-1 lg:grid-cols-[70%_1fr] gap-x-12 gap-y-12">
+        <div class="grid grid-cols-1 gap-x-12 gap-y-12 lg:grid-cols-[70%_1fr]">
           <div>
-            <p class="text-slate text-[20px] leading-normal mb-2">
+            <p class="text-slate mb-2 text-[20px] leading-normal">
               Hello! My name is Brittany and I enjoy creating things that live
               on the internet. My interest in web development started back in
               2012 when I decided to try editing custom Tumblr themes — turns
               out hacking together a custom reblog button taught me a lot about
               HTML & CSS!
             </p>
-            <p class="text-slate text-[20px] leading-normal mb-2">
+            <p class="text-slate mb-2 text-[20px] leading-normal">
               Fast-forward to today, and I’ve had the privilege of working at an
               advertising agency, a start-up, a huge corporation, and a
               student-led design studio. My main focus these days is building
               accessible, inclusive products and digital experiences at
               Upstatement for a variety of clients.
             </p>
-            <p class="text-slate text-[20px] leading-normal mb-2">
+            <p class="text-slate mb-2 text-[20px] leading-normal">
               I also recently launched a course that covers everything you need
               to build a web app with the Spotify API using Node & React.
             </p>
-            <p class="text-slate text-[20px] leading-normal mb-2">
+            <p class="text-slate mb-2 text-[20px] leading-normal">
               Here are a few technologies I’ve been working with recently:
             </p>
-            <ul class="grid grid-cols-2 gap-y-1 mt-6 ml-4">
+            <ul class="ml-4 mt-6 grid grid-cols-2 gap-y-1">
               <li class="language__item text-slate">JavaScript (ES6+)</li>
               <li class="language__item text-slate">React</li>
               <li class="language__item text-slate">Node.js</li>
@@ -213,7 +192,7 @@
             </ul>
           </div>
           <div class="">
-            <div class="about-picture mx-auto relative w-[240px]">
+            <div class="about-picture relative mx-auto w-[240px]">
               <img
                 class="about-picture__img max-w-[100%] rounded-[10px]"
                 src="./assets/images/avt.jpg"
@@ -225,69 +204,69 @@
         </div>
       </div>
       <!-- section worked -->
-      <div class="max-w-[700px] mx-auto pb-[250px]">
+      <div class="mx-auto max-w-[700px] pb-[250px]">
         <!-- section title -->
-        <div class="flex items-center justify-start gap-x-8 mb-10">
+        <div class="mb-10 flex items-center justify-start gap-x-8">
           <h2 class="section-title text-lightestSlate font-semibold">
             What I've worked
           </h2>
-          <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
+          <span class="bg-lightestNavy block h-[1px] w-[40%]"></span>
         </div>
         <div class="grid grid-cols-[max-content_auto] gap-x-3">
           <div>
             <ul class="tab__list relative grid">
               <li
                 data-index="0"
-                class="tab__item tab__item--active h-[42px] flex items-center px-6 font-sfMono text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid"
+                class="tab__item tab__item--active font-sfMono border-lightestNavy flex h-[42px] cursor-pointer items-center border-l-2 border-solid px-6 text-[13px]"
               >
                 Upstatement
               </li>
               <li
                 data-index="1"
-                class="tab__item h-[42px] flex items-center px-6 font-sfMono text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid"
+                class="tab__item font-sfMono border-lightestNavy flex h-[42px] cursor-pointer items-center border-l-2 border-solid px-6 text-[13px]"
               >
                 Scout
               </li>
               <li
                 data-index="2"
-                class="tab__item h-[42px] flex items-center px-6 font-sfMono text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid"
+                class="tab__item font-sfMono border-lightestNavy flex h-[42px] cursor-pointer items-center border-l-2 border-solid px-6 text-[13px]"
               >
                 Apple
               </li>
               <li
                 data-index="3"
-                class="tab__item h-[42px] flex items-center px-6 font-sfMono text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid"
+                class="tab__item font-sfMono border-lightestNavy flex h-[42px] cursor-pointer items-center border-l-2 border-solid px-6 text-[13px]"
               >
                 Scout
               </li>
               <li
                 data-index="4"
-                class="tab__item h-[42px] flex items-center px-6 font-sfMono text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid"
+                class="tab__item font-sfMono border-lightestNavy flex h-[42px] cursor-pointer items-center border-l-2 border-solid px-6 text-[13px]"
               >
                 Starry
               </li>
               <li
                 data-index="5"
-                class="tab__item h-[42px] flex items-center px-6 font-sfMono text-[13px] cursor-pointer border-l-2 border-lightestNavy border-solid"
+                class="tab__item font-sfMono border-lightestNavy flex h-[42px] cursor-pointer items-center border-l-2 border-solid px-6 text-[13px]"
               >
                 MullenLowe
               </li>
               <li
-                class="tab__line absolute content-[''] w-[1px] h-[42px] bg-white"
+                class="tab__line absolute h-[42px] w-[1px] bg-white content-['']"
               ></li>
             </ul>
           </div>
           <div class="py-[10px]">
             <ul class="tab-content__list">
               <li data-index="0" class="tab-content__item">
-                <h3 class="font-medium text-[20px]">
+                <h3 class="text-[20px] font-medium">
                   <span class="text-lightestSlate">Coder</span>
                   <span class="text-green">@TopOnTech</span>
                 </h3>
-                <p class="text-lightestSlate text-[12px] font-sfMono">
+                <p class="text-lightestSlate font-sfMono text-[12px]">
                   May 2018 - Present
                 </p>
-                <ul class="grid gap-y-3 mt-6 ml-4">
+                <ul class="ml-4 mt-6 grid gap-y-3">
                   <li class="language__item text-slate text-[18px]">
                     Write modern, performant, maintainable code for a diverse
                     array of client and internal projects
@@ -305,14 +284,14 @@
                 </ul>
               </li>
               <li data-index="1" class="tab-content__item hidden">
-                <h3 class="font-medium text-[20px]">
+                <h3 class="text-[20px] font-medium">
                   <span class="text-lightestSlate">Coder</span>
                   <span class="text-green">@Abc</span>
                 </h3>
-                <p class="text-lightestSlate text-[12px] font-sfMono">
+                <p class="text-lightestSlate font-sfMono text-[12px]">
                   May 2018 - Present
                 </p>
-                <ul class="grid gap-y-3 mt-6 ml-4">
+                <ul class="ml-4 mt-6 grid gap-y-3">
                   <li class="language__item text-slate text-[18px]">
                     Write modern, performant, maintainable code for a diverse
                     array of client and internal projects
@@ -330,14 +309,14 @@
                 </ul>
               </li>
               <li data-index="2" class="tab-content__item hidden">
-                <h3 class="font-medium text-[20px]">
+                <h3 class="text-[20px] font-medium">
                   <span class="text-lightestSlate">Coder</span>
                   <span class="text-green">@Xyz</span>
                 </h3>
-                <p class="text-lightestSlate text-[12px] font-sfMono">
+                <p class="text-lightestSlate font-sfMono text-[12px]">
                   May 2018 - Present
                 </p>
-                <ul class="grid gap-y-3 mt-6 ml-4">
+                <ul class="ml-4 mt-6 grid gap-y-3">
                   <li class="language__item text-slate text-[18px]">
                     Write modern, performant, maintainable code for a diverse
                     array of client and internal projects
@@ -355,14 +334,14 @@
                 </ul>
               </li>
               <li data-index="3" class="tab-content__item hidden">
-                <h3 class="font-medium text-[20px]">
+                <h3 class="text-[20px] font-medium">
                   <span class="text-lightestSlate">Coder</span>
                   <span class="text-green">@TopOnTech</span>
                 </h3>
-                <p class="text-lightestSlate text-[12px] font-sfMono">
+                <p class="text-lightestSlate font-sfMono text-[12px]">
                   May 2018 - Present
                 </p>
-                <ul class="grid gap-y-3 mt-6 ml-4">
+                <ul class="ml-4 mt-6 grid gap-y-3">
                   <li class="language__item text-slate text-[18px]">
                     Write modern, performant, maintainable code for a diverse
                     array of client and internal projects
@@ -380,14 +359,14 @@
                 </ul>
               </li>
               <li data-index="4" class="tab-content__item hidden">
-                <h3 class="font-medium text-[20px]">
+                <h3 class="text-[20px] font-medium">
                   <span class="text-lightestSlate">Coder</span>
                   <span class="text-green">@TopOnTech</span>
                 </h3>
-                <p class="text-lightestSlate text-[12px] font-sfMono">
+                <p class="text-lightestSlate font-sfMono text-[12px]">
                   May 2018 - Present
                 </p>
-                <ul class="grid gap-y-3 mt-6 ml-4">
+                <ul class="ml-4 mt-6 grid gap-y-3">
                   <li class="language__item text-slate text-[18px]">
                     Write modern, performant, maintainable code for a diverse
                     array of client and internal projects
@@ -405,14 +384,14 @@
                 </ul>
               </li>
               <li data-index="5" class="tab-content__item hidden">
-                <h3 class="font-medium text-[20px]">
+                <h3 class="text-[20px] font-medium">
                   <span class="text-lightestSlate">Coder</span>
                   <span class="text-green">@TopOnTech</span>
                 </h3>
-                <p class="text-lightestSlate text-[12px] font-sfMono">
+                <p class="text-lightestSlate font-sfMono text-[12px]">
                   May 2018 - Present
                 </p>
-                <ul class="grid gap-y-3 mt-6 ml-4">
+                <ul class="ml-4 mt-6 grid gap-y-3">
                   <li class="language__item text-slate text-[18px]">
                     Write modern, performant, maintainable code for a diverse
                     array of client and internal projects
@@ -435,62 +414,62 @@
       </div>
 
       <!-- section What I've worked -->
-      <div class="max-w-5xl mx-auto pb-[250px]">
+      <div class="mx-auto max-w-5xl pb-[250px]">
         <!-- section title -->
-        <div class="flex items-center justify-start gap-x-8 mb-10">
+        <div class="mb-10 flex items-center justify-start gap-x-8">
           <h2 class="section-title text-lightestSlate font-semibold">
             Some Things I’ve Built
           </h2>
-          <span class="w-[40%] h-[1px] block bg-lightestNavy"></span>
+          <span class="bg-lightestNavy block h-[1px] w-[40%]"></span>
         </div>
         <div>
-          <ul class="grid gap-y-40 mt-20">
+          <ul class="mt-20 grid gap-y-40">
             <li class="grid grid-cols-12 shadow-xl lg:shadow-none">
               <div
-                class="builted-image rounded col-start-1 overflow-hidden col-end-13 lg:col-start-1 lg:col-end-8 row-start-1 row-end-13 opacity-10 lg:opacity-100"
+                class="builted-image row-end-13 col-start-1 col-end-13 row-start-1 overflow-hidden rounded opacity-10 lg:col-start-1 lg:col-end-8 lg:opacity-100"
               >
                 <img
-                  class="w-full h-full object-cover builted-image__img"
+                  class="builted-image__img h-full w-full object-cover"
                   src="./assets/images/halcyon.avif"
                   alt=""
                 />
                 <div class="builted-image__overlay"></div>
               </div>
               <div
-                class="relative col-start-1 col-end-13 lg:col-start-7 lg:col-end-13 row-start-1 row-end-13 text-right lg:text-right bg-[rgba(255,255,255,0.01)] lg:bg-[rgba(255,255,255,0)]"
+                class="row-end-13 relative col-start-1 col-end-13 row-start-1 bg-[rgba(255,255,255,0.01)] p-10 text-left lg:col-start-7 lg:col-end-13 lg:bg-[rgba(255,255,255,0)] lg:p-0 lg:text-right"
               >
-                <span class="font-sfMono text-[13px] text-green"
+                <span class="font-sfMono text-green text-[13px]"
                   >Featured Project</span
                 >
-                <h3 class="text-lightestSlate font-bold text-[30px] mb-6">
+                <h3 class="text-lightestSlate mb-6 text-[30px] font-bold">
                   Halcyon Theme
                 </h3>
                 <p
-                  class="z-[1] text-lightestSlate rounded shadow-md text-[18px] p-6 pl-10 lg:bg-lightNavy"
+                  class="text-lightestSlate lg:bg-lightNavy z-[1] rounded text-[18px] shadow-md lg:p-6 lg:pl-10"
                 >
                   A minimal, dark blue theme for VS Code, Sublime Text, Atom,
                   iTerm, and more. Available on Visual Studio Marketplace,
                   Package Control, Atom Package Manager, and npm.
                 </p>
-                <ul class="flex gap-x-4 justify-end my-5">
-                  <li class="font-sfMono text-[13px] text-lightSlate">
+                <ul class="my-5 flex gap-x-4 lg:justify-end">
+                  <li class="font-sfMono text-lightSlate text-[13px]">
                     VS Code
                   </li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">
+                  <li class="font-sfMono text-lightSlate text-[13px]">
                     Sublime
                   </li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">Text</li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">Atom</li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">
+                  <li class="font-sfMono text-lightSlate text-[13px]">Text</li>
+                  <li class="font-sfMono text-lightSlate text-[13px]">Atom</li>
+                  <li class="font-sfMono text-lightSlate text-[13px]">
                     iTerm2
                   </li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">Hyper</li>
+                  <li class="font-sfMono text-lightSlate text-[13px]">Hyper</li>
                 </ul>
-                <ul class="flex gap-x-4 justify-end my-5">
+                <ul class="my-5 flex gap-x-4 lg:justify-end">
                   <li class="">
-                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                    <a class="text-lightSlate block h-[20px] w-[20px]" href="">
                       <svg
-                        class="w-full h-full"
+                        class="h-full w-full"
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"
                         viewBox="0 0 24 24"
@@ -509,9 +488,9 @@
                     </a>
                   </li>
                   <li>
-                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                    <a class="text-lightSlate block h-[20px] w-[20px]" href="">
                       <svg
-                        class="w-full h-full"
+                        class="h-full w-full"
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"
                         viewBox="0 0 24 24"
@@ -536,50 +515,50 @@
             </li>
             <li class="grid grid-cols-12 shadow-xl lg:shadow-none">
               <div
-                class="builted-image overflow-hidden rounded col-start-1 col-end-13 lg:col-start-6 lg:col-end-13 row-start-1 row-end-13 opacity-10 lg:opacity-100"
+                class="builted-image row-end-13 col-start-1 col-end-13 row-start-1 overflow-hidden rounded opacity-10 lg:col-start-6 lg:col-end-13 lg:opacity-100"
               >
                 <img
-                  class="w-full h-full object-cover builted-image__img"
+                  class="builted-image__img h-full w-full object-cover"
                   src="./assets/images/halcyon.avif"
                   alt=""
                 />
                 <div class="builted-image__overlay"></div>
               </div>
               <div
-                class="col-start-1 relative col-end-13 lg:col-start-1 lg:col-end-7 row-start-1 row-end-13 text-right lg:text-left bg-[rgba(255,255,255,0.01)] lg:bg-[rgba(255,255,255,0)]"
+                class="row-end-13 relative col-start-1 col-end-13 row-start-1 bg-[rgba(255,255,255,0.01)] p-10 text-left lg:col-start-1 lg:col-end-7 lg:bg-[rgba(255,255,255,0)] lg:p-0"
               >
-                <span class="font-sfMono text-[13px] text-green"
+                <span class="font-sfMono text-green text-[13px]"
                   >Featured Project</span
                 >
-                <h3 class="text-lightestSlate font-bold text-[30px] mb-6">
+                <h3 class="text-lightestSlate mb-6 text-[30px] font-bold">
                   Halcyon Theme
                 </h3>
                 <p
-                  class="z-[1] text-lightestSlate rounded shadow-md text-[18px] p-6 pl-10 lg:bg-lightNavy"
+                  class="text-lightestSlate lg:bg-lightNavy z-[1] rounded text-[18px] shadow-md lg:p-6 lg:pl-10"
                 >
                   A minimal, dark blue theme for VS Code, Sublime Text, Atom,
                   iTerm, and more. Available on Visual Studio Marketplace,
                   Package Control, Atom Package Manager, and npm.
                 </p>
-                <ul class="flex gap-x-4 justify-start my-5">
-                  <li class="font-sfMono text-[13px] text-lightSlate">
+                <ul class="my-5 flex justify-start gap-x-4">
+                  <li class="font-sfMono text-lightSlate text-[13px]">
                     VS Code
                   </li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">
+                  <li class="font-sfMono text-lightSlate text-[13px]">
                     Sublime
                   </li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">Text</li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">Atom</li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">
+                  <li class="font-sfMono text-lightSlate text-[13px]">Text</li>
+                  <li class="font-sfMono text-lightSlate text-[13px]">Atom</li>
+                  <li class="font-sfMono text-lightSlate text-[13px]">
                     iTerm2
                   </li>
-                  <li class="font-sfMono text-[13px] text-lightSlate">Hyper</li>
+                  <li class="font-sfMono text-lightSlate text-[13px]">Hyper</li>
                 </ul>
-                <ul class="flex gap-x-4 justify-start my-5">
+                <ul class="my-5 flex justify-start gap-x-4">
                   <li class="">
-                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                    <a class="text-lightSlate block h-[20px] w-[20px]" href="">
                       <svg
-                        class="w-full h-full"
+                        class="h-full w-full"
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"
                         viewBox="0 0 24 24"
@@ -598,9 +577,9 @@
                     </a>
                   </li>
                   <li>
-                    <a class="w-[20px] h-[20px] block text-lightSlate" href="">
+                    <a class="text-lightSlate block h-[20px] w-[20px]" href="">
                       <svg
-                        class="w-full h-full"
+                        class="h-full w-full"
                         xmlns="http://www.w3.org/2000/svg"
                         role="img"
                         viewBox="0 0 24 24"
@@ -629,15 +608,15 @@
     </main>
 
     <footer class="py-10">
-      <p class="text-center text-darkSlate font-sfMono text-[12px]">
+      <p class="text-darkSlate font-sfMono text-center text-[12px]">
         Designed by Brittany Chiang. Built by Ng Thanh Cong
       </p>
       <ul
-        class="flex gap-x-4 items-center justify-center text-[12px] font-sfMono text-darkSlate"
+        class="font-sfMono text-darkSlate flex items-center justify-center gap-x-4 text-[12px]"
       >
         <li>
           <svg
-            class="w-[14px] h-[14px]"
+            class="h-[14px] w-[14px]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -655,7 +634,7 @@
         <li>0,000</li>
         <li>
           <svg
-            class="w-[14px] h-[14px]"
+            class="h-[14px] w-[14px]"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -677,7 +656,7 @@
 
     <!-- LOADING -->
     <div
-      class="hand-loading fixed inset-0 z-[1000] bg-darkNavy flex items-center justify-center"
+      class="hand-loading bg-darkNavy fixed inset-0 z-[1000] flex items-center justify-center"
     >
       <!-- <img class="loading__img" src="./assets/images/ghost.gif" alt="" /> -->
       <iframe
@@ -689,12 +668,12 @@
     <!-- INFORMATION VERTICAL -->
     <div class="information-vertical fade-enter">
       <ul
-        class="lg:flex hidden fixed left-16 bottom-0 flex flex-col items-center gap-y-6"
+        class="fixed bottom-0 left-16 flex hidden flex-col items-center gap-y-6 lg:flex"
       >
         <li>
           <a class="" href="">
             <svg
-              class="w-5 h-5 text-slate"
+              class="text-slate h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
@@ -714,7 +693,7 @@
         <li>
           <a class="" href="">
             <svg
-              class="w-5 h-5 text-slate"
+              class="text-slate h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
               viewBox="0 0 24 24"
@@ -735,7 +714,7 @@
         <li>
           <a class="" href="">
             <svg
-              class="w-5 h-5 text-slate"
+              class="text-slate h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
               viewBox="0 0 24 24"
@@ -756,7 +735,7 @@
         <li>
           <a class="" href="">
             <svg
-              class="w-5 h-5 text-slate"
+              class="text-slate h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
               viewBox="0 0 24 24"
@@ -779,7 +758,7 @@
         <li>
           <a href="">
             <svg
-              class="w-5 h-5 text-slate"
+              class="text-slate h-5 w-5"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
               viewBox="0 0 24 24"
@@ -811,7 +790,7 @@
       </ul>
 
       <ul
-        class="lg:flex hidden fixed right-16 bottom-0 flex flex-col items-center gap-y-4"
+        class="fixed bottom-0 right-16 flex hidden flex-col items-center gap-y-4 lg:flex"
       >
         <li>
           <a
@@ -834,6 +813,30 @@
     <!-- CURSOR -->
     <div class="cursor-overlay"></div>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              calibre: ["Calibre", "sans-serif"],
+              sfMono: ["SFMono", "sans-serif"],
+            },
+          },
+          colors: {
+            primary: "var(--color-navy)",
+            lightNavy: "var(--color-light-navy)",
+            lightestNavy: "var(--color-lightest-navy)",
+            darkNavy: "var(--color-dark-navy)",
+            white: "var(--color-white)",
+            lightSlate: "var(--color-light-slate)",
+            lightestSlate: "var(--color-lightest-slate)",
+            slate: "var(--color-slate)",
+            darkSlate: "var(--color-dark-slate)",
+            green: "var(--color-green)",
+          },
+        },
+      };
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
